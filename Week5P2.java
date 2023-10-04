@@ -13,24 +13,29 @@ public class Week5P2 {
 		
 		System.out.print("Enter number 2: ");
 			double m = in.nextDouble();
-
-		
-		System.out.print("The answer of " + n + op + m + " = ");
 		
 		switch (op) {
 		case '+':
+			System.out.print("The answer of " + n + op + m + " = ");
 			System.out.printf("%.2f",n+m);
 			break;
 			
 		case '-':
+			System.out.print("The answer of " + n + op + m + " = ");
 			System.out.printf("%.2f",n-m);
 			break;
 			
 		case '*':
+			System.out.print("The answer of " + n + op + m + " = ");
 			System.out.printf("%.2f",n*m);
 			break;
 			
 		case '/':
+			if (m == 0) {
+				System.out.println("ERROR! Can't divide by 0");
+				break;
+			}
+			System.out.print("The answer of " + n + op + m + " = ");
 			System.out.printf("%.2f",n/m);
 			break;
 		}
